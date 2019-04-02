@@ -1,0 +1,24 @@
+
+void main()
+{
+  int n, q = input();
+  vec<int> arr = input(n);
+  
+  seg_tree<int> sum_tree(arr, (x, y) => x + y);
+
+  loop (q)
+  {
+    int t = input();
+
+    if (t == 1)
+    {
+      int idx, value = input();
+      sum_tree.set(idx, value);
+    }
+    else
+    {
+      int left, right = input();
+      output(sum_tree.query(left, right));
+    }
+  }
+}
