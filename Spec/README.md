@@ -15,6 +15,15 @@
 - `set<K>` : ordered set
 - `multiset<K>`: ordered multi set
 - `graph`, `tree`?
+- custom type(struct
+
+### struct
+
+## 변수 선언
+
+```text
+(name):(type) [= (init value)];
+```
 
 ## 모듈
 
