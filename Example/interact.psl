@@ -1,0 +1,44 @@
+
+fn main(): void
+{
+  lo: int = 0;
+  hi: int = 100000;
+  ans: int = 0;
+
+  while(lo <= hi)
+  {
+    mid: int = (lo + hi) / 2;
+    write!("? ${mid}")
+    read(gt: bool);
+    if (gt)
+    {
+      lo = mid + 1;
+    }
+    else
+    {
+      ans = mid;
+      hi = mid - 1;
+    } 
+  }
+  write!("! ${ans}");
+}
+
+// interact 모드로 켰을 때만 동작
+fn interact(): void
+{
+  readIn(k: int); // read from input file
+  
+  while(true)
+  {
+    readOut(type: string, value: int); // read from output file
+    if (type == "?")
+    {
+      writeIn(value > k? 1 : 0); // write to output file
+    }
+    else if(type == "!")
+    {
+      accept(k == value, "ans: ${k}, received: ${value}"); // set interactor state (true - accept, false - fail)
+      break;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+
+fn main(): void
+{
+  read(n: int, arr: vec<int>[1..n]);
+  sort(arr[1:n]);
+  write(arr, ' '); // writeln(arr) = write(arr, '\n')
+}
