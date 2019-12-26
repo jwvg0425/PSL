@@ -1,0 +1,17 @@
+
+fn main(): void
+{
+  a: int;
+  b: int;
+  read(a);
+  read(b);
+  writeln(a+b);
+}
+
+/* todo
+fn main(): void
+{
+  read(a: int, b: int);
+  writeln(a+b);
+}
+*/

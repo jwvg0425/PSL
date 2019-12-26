@@ -1,0 +1,5 @@
+
+fn main(): void
+{
+  writeln("Hello, World!");
+}
