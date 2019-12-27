@@ -10,14 +10,16 @@
 - `string` : 문자열
 - `char` : 문자
 - `T[sz]` : 고정 길이 배열
-- `vec<T>` : 가변 배열
-- `map<K, T>` : ordered map
-- `set<K>` : ordered set
-- `multiset<K>`: ordered multi set
+- `vec T` : 가변 배열
+- `map K T` : ordered map
+- `set K` : ordered set
+- `multiset K`: ordered multi set
 - `graph`, `tree`?
-- custom type(struct
+- custom type(struct)
 
 ### struct
+
+## type system
 
 ## 변수 선언
 
